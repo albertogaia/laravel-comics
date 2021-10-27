@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $menu_links = config('menu-links');
+    $data = [
+        'links' => $menu_links
+    ];
+    return view('home', $data);
 })->name('homepage');

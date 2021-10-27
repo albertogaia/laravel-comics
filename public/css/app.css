@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;600;700&display=swap);* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1270px;
+  padding: 0 15px;
+}
+
+header .header__top {
+  background-color: #0282FA;
+}
+header .header__top .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 30px;
+  color: #fff;
+}
+header .header__top .container span {
+  font-weight: 600;
+  font-size: 0.8em;
+  margin-left: 50px;
+}
+header .header__bottom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+  flex-wrap: wrap;
+}
+header .header__bottom .container .header__logo {
+  width: 70px;
+}
+header .header__bottom .container .header__logo img {
+  width: 100%;
+}
+header .header__bottom .container .header__links {
+  text-transform: uppercase;
+}
+header .header__bottom .container .header__links a {
+  margin: 0 10px;
+  font-weight: 600;
+  color: #666;
+  text-decoration: none;
+}
+header .header__bottom .container .header__search input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #0282FA;
+  padding: 5px;
+}

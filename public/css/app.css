@@ -49,7 +49,7 @@ header .header__bottom .container .header__links {
 header .header__bottom .container .header__links a {
   margin: 0 10px;
   font-weight: 600;
-  color: #666;
+  color: #888;
   text-decoration: none;
 }
 header .header__bottom .container .header__search input {
@@ -57,4 +57,105 @@ header .header__bottom .container .header__search input {
   outline: none;
   border-bottom: 2px solid #0282FA;
   padding: 5px;
+}
+
+.homepage #jumbotron {
+  width: 100%;
+  height: 450px;
+}
+.homepage #jumbotron img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.homepage #CS {
+  background-color: #222;
+}
+.homepage #CS #CS__title {
+  display: inline-block;
+  padding: 10px 20px;
+  transform: translateY(-50%);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #0282FA;
+}
+.homepage #CS .CS__series {
+  display: flex;
+  flex-wrap: wrap;
+}
+.homepage #CS .CS__series .CS__item {
+  display: flex;
+  flex-direction: column;
+  width: calc(16.6666666667% - 20px);
+  margin: 10px;
+}
+.homepage #CS .CS__series .CS__item .CS__img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 5px;
+}
+.homepage #CS .CS__series .CS__item .CS__img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  height: 100%;
+  width: 100%;
+}
+.homepage #CS .CS__series .CS__item .CS__titolo {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+}
+.homepage #CS .CS__button {
+  display: flex;
+  justify-content: center;
+}
+.homepage #CS .CS__button button {
+  margin: 25px auto 15px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  padding: 10px 55px;
+  background-color: #0282FA;
+  font-weight: 700;
+  color: #fff;
+}
+
+#features {
+  background-color: #0282FA;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+#features ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#features .features__item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#features .features__item .features__img {
+  width: 50px;
+  height: 60px;
+}
+#features .features__item .features__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#features .features__item .features__title {
+  text-transform: uppercase;
+  margin-left: 15px;
+  color: #fff;
+  font-weight: 600;
 }

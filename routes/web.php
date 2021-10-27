@@ -18,5 +18,10 @@ Route::get('/', function () {
     $data = [
         'links' => $menu_links
     ];
-    return view('home', $data);
+
+    $current_series = config('comics');
+    $comics = [
+        'comics' => $current_series
+    ];
+    return view('home', $data, $comics);
 })->name('homepage');

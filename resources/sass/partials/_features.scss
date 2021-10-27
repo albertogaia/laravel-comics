@@ -1,0 +1,31 @@
+#features {
+    background-color: $primary_color;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .features__item {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .features__img {
+            width: 50px;
+            height: 60px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .features__title {
+            text-transform: uppercase;
+            margin-left: 15px;
+            color: $text_light;
+            font-weight: $bold;
+        }
+    }
+}

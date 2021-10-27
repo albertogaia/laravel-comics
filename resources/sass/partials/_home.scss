@@ -1,0 +1,65 @@
+.homepage {
+    #jumbotron {
+        width: 100%;
+        height: 450px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+    #CS {
+        background-color: $secondary_color;
+        #CS__title {
+            display: inline-block;
+            padding: 10px 20px;
+            transform: translateY(-50%);
+            color: $text_light;
+            text-transform: uppercase;
+            font-weight: $x_bold;
+            background-color: $primary_color;
+        }
+        .CS__series {
+            display: flex;
+            flex-wrap: wrap;
+            .CS__item {
+                display: flex;
+                flex-direction: column;
+                width: calc(100% / 6 - 20px);
+                margin: 10px;
+                .CS__img {
+                    width: 150px;
+                    height: 150px;
+                    margin-bottom: 5px;
+                    img {
+                        object-fit: cover;
+                        object-position: top;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                .CS__titolo {
+                    font-size: 0.8em;
+                    text-transform: uppercase;
+                    color: $text_light;
+                    font-weight: $bold;
+                }
+            }
+        }
+        .CS__button {
+            display: flex;
+            justify-content: center;
+            button {
+                margin: 25px auto 15px;
+                border: none;
+                outline: none;
+                text-transform: uppercase;
+                padding: 10px 55px;
+                background-color: $primary_color;
+                font-weight: $x_bold;
+                color: $text_light;
+            }
+        }
+    }
+}

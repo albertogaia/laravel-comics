@@ -9,7 +9,7 @@ return [
     'videos' => '#',
     'fans' => '#',
     'news' => '#',
-    'shop' => '#',
+    'shop' => 'shop',
 ]
 
 ?>

@@ -25,3 +25,16 @@ Route::get('/', function () {
     ];
     return view('home', $data, $comics);
 })->name('homepage');
+
+Route::get('/shop', function () {
+    $menu_links = config('menu-links');
+    $data = [
+        'links' => $menu_links
+    ];
+
+    $current_series = config('comics');
+    $comics = [
+        'comics' => $current_series
+    ];
+    return view('shop', $data, $comics);
+})->name('shop');

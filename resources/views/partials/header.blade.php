@@ -8,7 +8,7 @@
         <div class="header__bottom">
             <div class="container">
                 <div class="header__logo">
-                    <img src="{{ asset('images/dc-logo.png')}}" alt="logo DC">
+                    <a href="/"><img src="{{ asset('images/dc-logo.png')}}" alt="logo DC"></a>
                 </div>
                 <div class="header__menu">
                     <ul class="header__links">

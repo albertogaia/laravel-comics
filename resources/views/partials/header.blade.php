@@ -12,9 +12,6 @@
                 </div>
                 <div class="header__menu">
                     <ul class="header__links">
-                        {{-- @foreach ($links as $key => $link)
-                            <a href="{{$link}}">{{$key}}</a>
-                        @endforeach --}}
                         @foreach ($links['headerLinks'] as $key => $link)
                             <a href="{{$link}}">{{$key}}</a>
                         @endforeach

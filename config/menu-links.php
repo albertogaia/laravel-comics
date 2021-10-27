@@ -1,17 +1,4 @@
 <?php
-// return [
-//     'characters' => '#',
-//     'comics' => '#',
-//     'movies' => '#',
-//     'tv' => '#',
-//     'games' => '#',
-//     'collectibles' => '#',
-//     'videos' => '#',
-//     'fans' => '#',
-//     'news' => '#',
-//     'shop' => 'shop',
-// ]
-
 return [
     'headerLinks' => [
         'characters' => '#',

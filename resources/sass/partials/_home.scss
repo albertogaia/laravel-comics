@@ -22,15 +22,18 @@
         }
         .CS__series {
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
             .CS__item {
                 display: flex;
                 flex-direction: column;
+                flex-wrap: wrap;
                 width: calc(100% / 6 - 20px);
+                min-width: 137px;
                 margin: 10px;
                 .CS__img {
-                    width: 150px;
-                    height: 150px;
+                    min-width: 150px;
+                    aspect-ratio: 1;
                     margin-bottom: 5px;
                     img {
                         object-fit: cover;

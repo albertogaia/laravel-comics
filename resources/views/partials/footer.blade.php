@@ -4,40 +4,28 @@
             <div class="footer__links">
                 <div class="col">
                     <ul><h3>DC COMICS</h3>
-                        <li><a href="#">Test prova</a></li>
-                        <li><a href="#">Test prova</a></li>
-                        <li><a href="#">Test prova</a></li>
-                        <li><a href="#">Test prova</a></li>
-                        <li><a href="#">Test prova</a></li>
-                        <li><a href="#">Test prova</a></li>
-                        <li><a href="#">Test prova</a></li>
+                        @foreach ($links['dccomics'] as $key => $link)
+                            <li><a href="{{$link}}">{{$key}}</a></li>
+                        @endforeach
                     </ul>
                     <ul><h3>SHOP</h3>
-                        <li><a href="#">Test prova</a></li>
-                        <li><a href="#">Test prova</a></li>
+                        @foreach ($links['shop'] as $key => $link)
+                            <li><a href="{{$link}}">{{$key}}</a></li>
+                        @endforeach
                     </ul>
                 </div>
                 <div class="col">
                     <ul><h3>DC</h3>
-                        <li><a href="#">Test prova</a></li>
-                        <li><a href="#">Test prova</a></li>
-                        <li><a href="#">Test prova</a></li>
-                        <li><a href="#">Test prova</a></li>
-                        <li><a href="#">Test prova</a></li>
-                        <li><a href="#">Test prova</a></li>
-                        <li><a href="#">Test prova</a></li>
-                        <li><a href="#">Test prova</a></li>
-                        <li><a href="#">Test prova</a></li>
+                        @foreach ($links['dc'] as $key => $link)
+                            <li><a href="{{$link}}">{{$key}}</a></li>
+                        @endforeach
                     </ul>
                 </div>
                 <div class="col">
                     <ul><h3>SITES</h3>
-                        <li><a href="#">Test prova</a></li>
-                        <li><a href="#">Test prova</a></li>
-                        <li><a href="#">Test prova</a></li>
-                        <li><a href="#">Test prova</a></li>
-                        <li><a href="#">Test prova</a></li>
-
+                        @foreach ($links['sites'] as $key => $link)
+                        <li><a href="{{$link}}">{{$key}}</a></li>
+                    @endforeach
                     </ul>
                 </div>
 

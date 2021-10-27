@@ -8,11 +8,14 @@
         <div class="header__bottom">
             <div class="container">
                 <div class="header__logo">
-                    <a href="/"><img src="{{ asset('images/dc-logo.png')}}" alt="logo DC"></a>
+                    <a href="/"><img src="{{ asset('images/dc-logo.png') }}" alt="logo DC"></a>
                 </div>
                 <div class="header__menu">
                     <ul class="header__links">
-                        @foreach ($links as $key => $link)
+                        {{-- @foreach ($links as $key => $link)
+                            <a href="{{$link}}">{{$key}}</a>
+                        @endforeach --}}
+                        @foreach ($links['headerLinks'] as $key => $link)
                             <a href="{{$link}}">{{$key}}</a>
                         @endforeach
                     </ul>
